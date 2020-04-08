@@ -20,6 +20,20 @@
     <route id="create-something">
       <from uri="direct:create-something"/>
       <log message="Hola mundo: ${body}"/>
+      <setHeader headerName="CamelHttpMethod">
+        <constant>POST</constant>
+      </setHeader>
+      <setHeader headerName="CamelHttpUri">
+        <simple>http://{{redhat.client-url}}</simple>
+      </setHeader>
+      <doTry>
+        <inOut uri="http://example.com" />
+        <log message="Sent to client auth connection!"/>
+        <doCatch>
+          <exception>java.lang.Exception</exception>
+          <log message="err: ${exception.message}"/>
+        </doCatch>
+      </doTry>
     </route>
 
   </camelContext>

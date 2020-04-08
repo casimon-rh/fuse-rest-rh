@@ -15,3 +15,6 @@ endpoints:
   enabled: false
   health:
     enabled: true
+
+redhat:
+  client-url: ${CLIENT_URL}
