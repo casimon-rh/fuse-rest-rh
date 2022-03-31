@@ -11,7 +11,7 @@
     <camel-version>2.21.0.fuse-740039-redhat-00001</camel-version>
     <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring-version>1.4.0.RELEASE</spring-version>
+    <spring-version>2.5.12</spring-version>
     <cxf-version>3.2.7.fuse-740026-redhat-00001</cxf-version>
     <openjdk18-openshift.version>latest</openjdk18-openshift.version>
     <fabric8-maven-version>3.5.42.fuse-750010-redhat-00002</fabric8-maven-version>
